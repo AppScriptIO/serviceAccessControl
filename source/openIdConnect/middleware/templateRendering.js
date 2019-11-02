@@ -1,8 +1,9 @@
-import underscore from 'underscore'
-import koaViews from 'koa-views'
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.createTemplateRenderingMiddleware = createTemplateRenderingMiddleware;var _underscore = _interopRequireDefault(require("underscore"));
+var _koaViews = _interopRequireDefault(require("koa-views"));
 
-export function createTemplateRenderingMiddleware() {
-  underscore.templateSettings = serviceConfig.underscore
-  console.info(`• Underscore template setting set as ${underscore.templateSettings.evaluate} ${underscore.templateSettings.interpolate} ${underscore.templateSettings.escape}`)
-  return koaViews('/', { map: { html: 'underscore', js: 'underscore' } })
+function createTemplateRenderingMiddleware() {
+  _underscore.default.templateSettings = serviceConfig.underscore;
+  console.info(`• Underscore template setting set as ${_underscore.default.templateSettings.evaluate} ${_underscore.default.templateSettings.interpolate} ${_underscore.default.templateSettings.escape}`);
+  return (0, _koaViews.default)('/', { map: { html: 'underscore', js: 'underscore' } });
 }
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NvdXJjZS9vcGVuSWRDb25uZWN0L21pZGRsZXdhcmUvdGVtcGxhdGVSZW5kZXJpbmcuanMiXSwibmFtZXMiOlsiY3JlYXRlVGVtcGxhdGVSZW5kZXJpbmdNaWRkbGV3YXJlIiwidW5kZXJzY29yZSIsInRlbXBsYXRlU2V0dGluZ3MiLCJzZXJ2aWNlQ29uZmlnIiwiY29uc29sZSIsImluZm8iLCJldmFsdWF0ZSIsImludGVycG9sYXRlIiwiZXNjYXBlIiwibWFwIiwiaHRtbCIsImpzIl0sIm1hcHBpbmdzIjoiOE9BQUE7QUFDQTs7QUFFTyxTQUFTQSxpQ0FBVCxHQUE2QztBQUNsREMsc0JBQVdDLGdCQUFYLEdBQThCQyxhQUFhLENBQUNGLFVBQTVDO0FBQ0FHLEVBQUFBLE9BQU8sQ0FBQ0MsSUFBUixDQUFjLHdDQUF1Q0osb0JBQVdDLGdCQUFYLENBQTRCSSxRQUFTLElBQUdMLG9CQUFXQyxnQkFBWCxDQUE0QkssV0FBWSxJQUFHTixvQkFBV0MsZ0JBQVgsQ0FBNEJNLE1BQU8sRUFBM0s7QUFDQSxTQUFPLHVCQUFTLEdBQVQsRUFBYyxFQUFFQyxHQUFHLEVBQUUsRUFBRUMsSUFBSSxFQUFFLFlBQVIsRUFBc0JDLEVBQUUsRUFBRSxZQUExQixFQUFQLEVBQWQsQ0FBUDtBQUNEIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHVuZGVyc2NvcmUgZnJvbSAndW5kZXJzY29yZSdcbmltcG9ydCBrb2FWaWV3cyBmcm9tICdrb2Etdmlld3MnXG5cbmV4cG9ydCBmdW5jdGlvbiBjcmVhdGVUZW1wbGF0ZVJlbmRlcmluZ01pZGRsZXdhcmUoKSB7XG4gIHVuZGVyc2NvcmUudGVtcGxhdGVTZXR0aW5ncyA9IHNlcnZpY2VDb25maWcudW5kZXJzY29yZVxuICBjb25zb2xlLmluZm8oYOKAoiBVbmRlcnNjb3JlIHRlbXBsYXRlIHNldHRpbmcgc2V0IGFzICR7dW5kZXJzY29yZS50ZW1wbGF0ZVNldHRpbmdzLmV2YWx1YXRlfSAke3VuZGVyc2NvcmUudGVtcGxhdGVTZXR0aW5ncy5pbnRlcnBvbGF0ZX0gJHt1bmRlcnNjb3JlLnRlbXBsYXRlU2V0dGluZ3MuZXNjYXBlfWApXG4gIHJldHVybiBrb2FWaWV3cygnLycsIHsgbWFwOiB7IGh0bWw6ICd1bmRlcnNjb3JlJywganM6ICd1bmRlcnNjb3JlJyB9IH0pXG59XG4iXX0=
