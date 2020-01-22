@@ -1,11 +1,12 @@
-export function authorizationMiddleware() {
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.authorizationMiddleware = authorizationMiddleware;function authorizationMiddleware() {
   return async (context, next) => {
-    // Authorization access example:
-    let token = await OAuthClass.authenticateMiddleware()(context.request, context.response)
-    if (token) await next()
-    else {
-      console.log('Sorry unauthorized access')
-      await next()
+
+    let token = await OAuthClass.authenticateMiddleware()(context.request, context.response);
+    if (token) await next();else
+    {
+      console.log('Sorry unauthorized access');
+      await next();
     }
-  }
+  };
 }
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NvdXJjZS9vQXV0aC9taWRkbGV3YXJlL2F1dGhvcml6YXRpb24uanMiXSwibmFtZXMiOlsiYXV0aG9yaXphdGlvbk1pZGRsZXdhcmUiLCJjb250ZXh0IiwibmV4dCIsInRva2VuIiwiT0F1dGhDbGFzcyIsImF1dGhlbnRpY2F0ZU1pZGRsZXdhcmUiLCJyZXF1ZXN0IiwicmVzcG9uc2UiLCJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoicUlBQU8sU0FBU0EsdUJBQVQsR0FBbUM7QUFDeEMsU0FBTyxPQUFPQyxPQUFQLEVBQWdCQyxJQUFoQixLQUF5Qjs7QUFFOUIsUUFBSUMsS0FBSyxHQUFHLE1BQU1DLFVBQVUsQ0FBQ0Msc0JBQVgsR0FBb0NKLE9BQU8sQ0FBQ0ssT0FBNUMsRUFBcURMLE9BQU8sQ0FBQ00sUUFBN0QsQ0FBbEI7QUFDQSxRQUFJSixLQUFKLEVBQVcsTUFBTUQsSUFBSSxFQUFWLENBQVg7QUFDSztBQUNITSxNQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWSwyQkFBWjtBQUNBLFlBQU1QLElBQUksRUFBVjtBQUNEO0FBQ0YsR0FSRDtBQVNEIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGZ1bmN0aW9uIGF1dGhvcml6YXRpb25NaWRkbGV3YXJlKCkge1xuICByZXR1cm4gYXN5bmMgKGNvbnRleHQsIG5leHQpID0+IHtcbiAgICAvLyBBdXRob3JpemF0aW9uIGFjY2VzcyBleGFtcGxlOlxuICAgIGxldCB0b2tlbiA9IGF3YWl0IE9BdXRoQ2xhc3MuYXV0aGVudGljYXRlTWlkZGxld2FyZSgpKGNvbnRleHQucmVxdWVzdCwgY29udGV4dC5yZXNwb25zZSlcbiAgICBpZiAodG9rZW4pIGF3YWl0IG5leHQoKVxuICAgIGVsc2Uge1xuICAgICAgY29uc29sZS5sb2coJ1NvcnJ5IHVuYXV0aG9yaXplZCBhY2Nlc3MnKVxuICAgICAgYXdhaXQgbmV4dCgpXG4gICAgfVxuICB9XG59XG4iXX0=
