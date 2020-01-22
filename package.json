@@ -1,6 +1,6 @@
 {
-	"name": "@dependency/serviceAccessControl",
-	"version": "1.0.1",
+	"name": "@service/serviceAccessControl",
+	"version": "1.1.1",
 	"main": "./entrypoint/programmaticAPI",
 	"scripts": {
 		"exportGraphData": "yarn run scriptManager shouldCompileScript=true @dependency/deploymentScript \".graphDataLoading.exportAllGraphData({targetPath: './temporary/resource',fileName: 'graphData.json'})\"",
@@ -20,9 +20,9 @@
 		"openid-client": "*"
 	},
 	"devDependencies": {
-		"@dependency/deploymentScript": "https://github.com/AppScriptIO/deploymentScript#semver:^1.x.x",
+		"@dependency/deploymentScript": "https://github.com/AppScriptIO/deploymentScript#semver:^2.x.x",
 		"@dependency/javascriptStaticAnalysis": "https://github.com/AppScriptIO/javascriptStaticAnalysis#semver:^1.x.x",
-		"@dependency/javascriptTranspilation": "https://github.com/AppScriptIO/javascriptTranspilation#semver:^1.x.x",
+		"@dependency/javascriptTranspilation": "https://github.com/AppScriptIO/javascriptTranspilation#semver:^2.x.x",
 		"@dependency/scriptManager": "https://github.com/AppScriptIO/scriptManager#semver:^1.x.x",
 		"typescript": "^3.3.3333"
 	}
